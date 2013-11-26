@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 26, 2013 10:21:56 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.guyzilla.domain.Member" table="member" catalog="dbzilla">
+        <id name="memberId" type="java.lang.Long">
+            <column name="member_id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="20" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="20" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="60" />
+        </property>
+        <property name="birthdate" type="string">
+            <column name="birthdate" length="10" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="40" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="40" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="40" />
+        </property>
+        <property name="postalCode" type="string">
+            <column name="postal_code" length="20" />
+        </property>
+        <property name="ethnicity" type="string">
+            <column name="ethnicity" length="20" />
+        </property>
+        <property name="role" type="string">
+            <column name="role" length="20" />
+        </property>
+        <property name="height" type="string">
+            <column name="height" length="20" />
+        </property>
+        <property name="weight" type="string">
+            <column name="weight" length="20" />
+        </property>
+        <property name="eyecolor" type="string">
+            <column name="eyecolor" length="20" />
+        </property>
+        <property name="haircolor" type="string">
+            <column name="haircolor" length="20" />
+        </property>
+        <property name="buildType" type="string">
+            <column name="build_type" length="20" />
+        </property>
+        <property name="bodyArt" type="string">
+            <column name="body_art" length="20" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="20" />
+        </property>
+        <property name="endowment" type="string">
+            <column name="endowment" length="20" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="16777215" />
+        </property>
+        <property name="photo" type="binary">
+            <column name="photo" />
+        </property>
+        <property name="creationDate" type="string">
+            <column name="creation_date" length="20" />
+        </property>
+        <property name="lastUpdateDate" type="string">
+            <column name="last_update_date" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
